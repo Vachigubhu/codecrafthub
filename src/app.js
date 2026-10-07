@@ -1,6 +1,7 @@
 const express = require("express");
 const fs = require("fs");
 const path = require("path");
+const cors = require("cors");
 
 const app = express();
 
@@ -9,6 +10,7 @@ const DATA_FILE = path.join(__dirname, "courses.json");
 const PORT = 5000;
 
 // Middleware to parse JSON request bodies
+app.use(cors());
 app.use(express.json());
 
 // Helper function to load courses from JSON file

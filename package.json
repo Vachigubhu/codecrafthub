@@ -2,15 +2,21 @@
   "name": "codecrafthub",
   "version": "1.0.0",
   "description": "Personal learning goal tracker API",
-  "main": "app.js",
+  "main": "src/app.js",
   "scripts": {
-    "start": "node app.js",
-    "dev": "nodemon app.js"
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
   },
-  "keywords": ["learning", "api", "rest", "express"],
+  "keywords": [
+    "learning",
+    "api",
+    "rest",
+    "express"
+  ],
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "cors": "^2.8.6",
     "express": "^4.18.2"
   },
   "devDependencies": {
